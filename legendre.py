@@ -2,21 +2,20 @@
 """
 This function is an equivalent of the matlab legendre function.
 legendre(n,xm) computes the associated Legendre functions with degree n and order m = 0,1,...,n, evaluated for each element of xm. 
-n should be a positive integer.
-xm should be real value in the range −1 ≤ xm ≤ 1.
 
-		Args:
-			n: degree of Legendre function
-			xm: input array
+Args:
+	n: degree of Legendre function (positive integer)
+	xm: input array (real value in the range −1 ≤ xm ≤ 1)
 		
-		Returns:
-			numpy array: associated Legendre function
+Returns:
+	numpy array: associated Legendre function
 
-        Notes: xm is always regarded as a row vector. More information: https://www.mathworks.com/help/matlab/ref/legendre.html
+Notes: 
+	xm is always regarded as a row vector. More information: https://www.mathworks.com/help/matlab/ref/legendre.html
 		
-		Requirements:
-		numpy >= 1.3
-		scipy >= 0.8
+Requirements:
+	numpy >= 1.3
+	scipy >= 0.8
 """
 import numpy as np
 from scipy import special
