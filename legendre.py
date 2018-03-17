@@ -1,8 +1,18 @@
 # -*- coding: utf-8 -*-
 """
 This function is an equivalent of the matlab legendre function.
+legendre(n,xm) computes the associated Legendre functions with degree n and order m = 0,1,...,n, evaluated for each element of xm. 
+n should be a positive integer.
+xm should be real value in the range −1 ≤ xm ≤ 1.
 
-        x is always regarded as a row vector.
+		Args:
+			n: degree of Legendre function
+			xm: input array
+		
+		Returns:
+			numpy array: associated Legendre function
+
+        Notes: xm is always regarded as a row vector. More information: https://www.mathworks.com/help/matlab/ref/legendre.html
 		
 		Requirements:
 		numpy >= 1.3
